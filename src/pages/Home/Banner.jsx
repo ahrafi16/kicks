@@ -32,7 +32,7 @@ const Banner = () => {
                     <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
 
                     {/* vertical badge */}
-                    <div className="absolute left-3 md:-left-6 top-1/3 -translate-y-1/2 rotate-90">
+                    <div className="absolute -left-6 md:-left-6 top-1/3 -translate-y-1/2 rotate-90">
                         <span className="bg-black  text-white text-sm px-3 py-2 rounded-b-lg rotate-180 inline-block">
                             Nike product of the year
                         </span>
