@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full flex justify-center py-4 bg-neutral-100">
-            <div className="w-[95%] max-w-6xl bg-white rounded-2xl shadow-sm px-4 md:px-6 py-3 flex items-center justify-between relative">
+            <div className="w-[95%] max-w-7xl bg-white rounded-2xl shadow-sm px-4 md:px-6 py-3 flex items-center justify-between relative">
 
                 {/* Desktop links */}
                 <div className="hidden md:flex items-center gap-6 text-sm font-medium text-neutral-700">

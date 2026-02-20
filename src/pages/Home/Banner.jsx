@@ -11,7 +11,7 @@ const Banner = () => {
 
     return (
         <section className="w-full flex justify-center bg-neutral-100 py-6 md:py-10">
-            <div className="w-[95%] max-w-6xl">
+            <div className="w-[95%] max-w-7xl">
 
                 {/* Heading */}
                 <h1 className="text-4xl w-full text-center md:text-[160px] font-extrabold tracking-wider mb-6 md:mb-10">

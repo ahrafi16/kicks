@@ -12,7 +12,7 @@ const NewDrops = () => {
 
     return (
         <section className="w-full flex justify-center bg-neutral-100 py-6 md:py-10">
-            <div className="w-[95%] max-w-6xl">
+            <div className="w-[95%] max-w-7xl">
 
                 {/* heading */}
                 <div className="flex justify-between items-center">
