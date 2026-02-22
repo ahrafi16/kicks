@@ -43,7 +43,7 @@ const Reviews = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
                     {
                         reviews.map(review => (
-                            <div className="bg-white rounded-2xl" key={review.id}>
+                            <div className="bg-white rounded-2xl transition hover:scale-105 duration-300" key={review.id}>
                                 <div className="p-5">
                                     <div className="flex items-center justify-between">
                                         <div className="flex flex-col space-y-2 text-black">
@@ -54,8 +54,13 @@ const Reviews = () => {
                                             <img src={review.client_img} alt="Client" className="w-12 h-12 rounded-full object-cover" />
                                         </div>
                                     </div>
-                                    <div className='flex items-center text-lg'>
-                                        <Star className='w-5 text-amber-400 fill-amber-400' /> {parseFloat(review.stars).toFixed(1)}
+                                    <div className='flex gap-1 items-center text-lg'>
+                                        {
+                                            Array.from({ length: Math.floor(review.stars) }, (_, i) => (
+                                                <Star key={i} className='w-4 text-amber-400 fill-amber-400' />
+                                            ))
+                                        }
+                                        {parseFloat(review.stars).toFixed(1)}
                                     </div>
                                 </div>
                                 <div className='w-full'>
